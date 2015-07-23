@@ -56,7 +56,6 @@ then
         --conflicts openjdk-$VERSION_MAJOR-jre \
         --template-scripts \
         --after-install ../post-install.sh \
-        --before-remove ../pre-remove.sh \
         -C "jdk1.${VERSION_MAJOR}.0_${VERSION_MINOR}" \
         .
 fi
