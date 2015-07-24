@@ -38,3 +38,8 @@ Or
 ```
 sudo dpkg -i oracle-jdk-8-8u51_amd64.deb
 ```
+## Download
+
+Thanks bintray provide us the download hosting, now you can obtain deb packages from bintray.com
+
+https://bintray.com/netroby/deb/oracle-jdk-8/view
