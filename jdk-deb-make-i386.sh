@@ -15,7 +15,7 @@ DEBNAME="${PACKAGE}-${VERSION}_i386.deb"
 
 mkdir -p work
 
-if [[ ! -f "work/$PKG_BASENAME" ]]
+if [ ! -f "work/$PKG_BASENAME" ]
 then
     echo "downloading from $URL"
     # bypass manual LICENSE confirmation: http://bit.ly/1hUJBDC
@@ -28,7 +28,7 @@ fi
 
 cd work
 
-if [[ ! -f "$DEBNAME" ]]
+if [ ! -f "$DEBNAME" ]
 then
     echo "building $DEBNAME"
     tar xzf $PKG_BASENAME
