@@ -28,7 +28,6 @@ fi
 
 cd work
 
-
 if [ ! -f "$DEBNAME" ]
 then
     echo "building $DEBNAME"
