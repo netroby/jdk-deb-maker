@@ -29,7 +29,7 @@ jdk-deb-make-i386.sh is for x86 system
 
 After  build finish, the deb packages location at work/ subdirectory
 
-cd work/ and install them 
+cd work/i386 or cd work/amd64 and install them 
 
 ```
 sudo dpkg -i oracle-jdk-8-8u51_i386.deb
