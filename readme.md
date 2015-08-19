@@ -3,6 +3,10 @@
 This is a tool to make JDK deb package from official Oracle JDK binary package.
 The latest Oracle JDK 8 was JDK 8u51
 
+## Download DEB prebuilt
+
+[ ![Download](https://api.bintray.com/packages/netroby/deb/oracle-jdk-8/images/download.svg) ](https://bintray.com/netroby/deb/oracle-jdk-8/_latestVersion)
+
 ## Requirement
  
 You should make sure you have install fpm tools via
