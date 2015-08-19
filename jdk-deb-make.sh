@@ -1,6 +1,7 @@
 #!/bin/bash
 source "common.sh"
 
+ARCH="amd64"
 PKG_BASENAME="jdk-$VERSION-linux-x64.tar.gz"
 URL="http://download.oracle.com/otn-pub/java/jdk/$VERSION-$BUILD/$PKG_BASENAME"
 

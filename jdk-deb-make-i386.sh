@@ -2,6 +2,7 @@
 
 source "common.sh"
 
+ARCH="i386"
 PKG_BASENAME="jdk-$VERSION-linux-i586.tar.gz"
 URL="http://download.oracle.com/otn-pub/java/jdk/$VERSION-$BUILD/$PKG_BASENAME"
 
