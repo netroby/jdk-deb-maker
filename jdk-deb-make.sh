@@ -1,12 +1,5 @@
 #!/bin/bash
-
-PACKAGE=oracle-jdk-8
-PACKAGE_VIRTUAL=oracle-jdk
-VERSION_MAJOR=8
-VERSION_MINOR=51
-VERSION="${VERSION_MAJOR}u${VERSION_MINOR}"
-BUILD=b16
-ARCH=amd64
+source "common.sh"
 
 PKG_BASENAME="jdk-$VERSION-linux-x64.tar.gz"
 URL="http://download.oracle.com/otn-pub/java/jdk/$VERSION-$BUILD/$PKG_BASENAME"
