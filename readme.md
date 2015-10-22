@@ -47,3 +47,9 @@ sudo dpkg -i oracle-jdk-8-8u60_amd64.deb
 Thanks bintray provide us the download hosting, now you can obtain deb packages from bintray.com
 
 https://bintray.com/netroby/deb/oracle-jdk-8/view
+
+## Donate me please
+
+![Scan QRCode donate me via Alipay](https://www.netroby.com/images/alipayme.jpg)
+
+**Scan QRCode donate me via Alipay**
