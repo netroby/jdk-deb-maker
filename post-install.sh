@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -ex
 JAVA_HOME=<%= prefix %>
 JRE_BIN=$JAVA_HOME/jre/bin
 JDK_BIN=$JAVA_HOME/bin
