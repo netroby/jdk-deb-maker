@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -ex
 source "common.sh"
 
 ARCH="i386"
