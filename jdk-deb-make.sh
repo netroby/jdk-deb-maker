@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 source "common.sh"
 
 ARCH="amd64"
