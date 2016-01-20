@@ -1,7 +1,7 @@
 #JDK deb maker
 
 This is a tool to make JDK deb package from official Oracle JDK binary package.
-The latest Oracle JDK 8 was JDK 8u66
+The latest Oracle JDK 8 was JDK 8u72
 
 ## Download DEB prebuilt
 
@@ -36,11 +36,11 @@ After  build finish, the deb packages location at work/ subdirectory
 cd work/i386 or cd work/amd64 and install them 
 
 ```
-sudo dpkg -i oracle-jdk-8-8u66_i386.deb
+sudo dpkg -i oracle-jdk-8-8u72_i386.deb
 ```
 Or
 ```
-sudo dpkg -i oracle-jdk-8-8u66_amd64.deb
+sudo dpkg -i oracle-jdk-8-8u72_amd64.deb
 ```
 ## Download
 
