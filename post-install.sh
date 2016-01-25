@@ -13,7 +13,7 @@ PRIORITY=100
 mkdir -p /usr/lib/jvm /usr/lib/jvm-exports
 for  n in java javac jmc jvisualvm jconsole jcontrol
 do
-    update-alternatives --install /usr/bin/$n $n $JRE_BIN/$n $PRIORITY
+    update-alternatives --install /usr/bin/$n $n $JAVA_HOME/$n $PRIORITY
 done
 
 
