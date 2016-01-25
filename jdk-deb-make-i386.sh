@@ -17,23 +17,20 @@ then
     # bypass manual LICENSE confirmation: http://bit.ly/1hUJBDC
     # see also PKGBUILD from AUR: http://bit.ly/1n7VhYr
     wget -c -O work/$ARCH/$PKG_BASENAME \
-         --no-cookies \
-         --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-         $URL
+        --no-cookies \
+        --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+        $URL
 fi
 
 cd work/$ARCH
 
-if [ ! -f "$DEBNAME" ]
-then
-    echo "building $DEBNAME"
-    tar xzf $PKG_BASENAME
-    fpm -s dir -t deb -n $PACKAGE -v $VERSION -p $DEBNAME \
-        --prefix $PREFIX \
-        --conflicts openjdk-$VERSION_MAJOR-jdk \
-        --conflicts openjdk-$VERSION_MAJOR-jre \
-        --template-scripts \
-        --after-install ../../post-install.sh \
-        -C "jdk1.${VERSION_MAJOR}.0_${VERSION_MINOR}" \
-        .
-fi
+echo "building $DEBNAME"
+tar xzf $PKG_BASENAME
+fpm -s dir -t deb -n $PACKAGE -v $VERSION -p $DEBNAME \
+    --prefix $PREFIX \
+    --conflicts openjdk-$VERSION_MAJOR-jdk \
+    --conflicts openjdk-$VERSION_MAJOR-jre \
+    --template-scripts \
+    --after-install ../../post-install.sh \
+    -C "jdk1.${VERSION_MAJOR}.0_${VERSION_MINOR}" \
+    .
