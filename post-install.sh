@@ -11,8 +11,11 @@ JAVA_MAN=$JAVA_HOME/man/man1
 PRIORITY=100
 
 mkdir -p /usr/lib/jvm /usr/lib/jvm-exports
-update-alternatives --install /usr/bin/java java $JRE_BIN/java $PRIORITY
-update-alternatives --install /usr/bin/javac javac $JDK_BIN/javac $PRIORITY
+for  n in java javac jmc jvisualvm jconsole jcontrol
+do
+    update-alternatives --install /usr/bin/$n $n $JRE_BIN/$n $PRIORITY
+done
+
 
 exit 0
 
