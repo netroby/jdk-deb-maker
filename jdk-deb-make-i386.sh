@@ -23,7 +23,7 @@ then
 fi
 
 cd work/$ARCH
-
+rm -rf *.deb
 echo "building $DEBNAME"
 tar xzf $PKG_BASENAME
 fpm -s dir -t deb -n $PACKAGE -v $VERSION -p $DEBNAME \
