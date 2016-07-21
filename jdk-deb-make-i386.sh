@@ -11,16 +11,13 @@ DEBNAME="${PACKAGE}-${VERSION}_i386.deb"
 
 mkdir -p work/$ARCH
 
-if [ ! -f "work/$ARCH/$PKG_BASENAME" ]
-then
-    echo "downloading from $URL"
-    # bypass manual LICENSE confirmation: http://bit.ly/1hUJBDC
-    # see also PKGBUILD from AUR: http://bit.ly/1n7VhYr
-    wget -c -O work/$ARCH/$PKG_BASENAME \
-        --no-cookies \
-        --header "Cookie: oraclelicense=accept-securebackup-cookie" \
-        $URL
-fi
+echo "downloading from $URL"
+# bypass manual LICENSE confirmation: http://bit.ly/1hUJBDC
+# see also PKGBUILD from AUR: http://bit.ly/1n7VhYr
+wget -c -O work/$ARCH/$PKG_BASENAME \
+    --no-cookies \
+    --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+    $URL
 
 cd work/$ARCH
 rm -rf *.deb
