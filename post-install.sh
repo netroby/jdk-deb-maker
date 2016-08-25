@@ -11,7 +11,7 @@ JAVA_MAN=$JAVA_HOME/man/man1
 PRIORITY=100
 
 mkdir -p /usr/lib/jvm /usr/lib/jvm-exports
-for  n in java javac jmc jvisualvm jconsole jcontrol
+for  n in java javac jmc jvisualvm jconsole jcontrol jar
 do
     update-alternatives --install /usr/bin/$n $n $JDK_BIN/$n $PRIORITY
 done
